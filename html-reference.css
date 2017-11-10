@@ -1,0 +1,77 @@
+.ta-l {
+  text-align: left;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.tf-b {
+  font: bold;
+}
+
+.tf-i {
+  font: italic;
+}
+
+.tf-u {
+  font: underline;
+}
+
+.mystyle {
+  color: blue;
+}
+
+.tb-b {
+  border: 2px solid black;
+}
+
+.tb-i {
+  background-color: darkgray;
+  color: white;
+}
+
+.tb-ii {
+  background-color: lightgray;
+}
+
+.tb-iii {
+  border: 15px solid gray;
+}
+
+.tb-iv {
+  background-color: lightgray;
+  color: white;
+}
+
+.mytstyle {
+  text-align: center;
+}
+
+.ff-c {
+  font: Courier, Monospace;
+}
+
+.ff-c12 {
+  font: 12px Courier, Monospace;
+}
+
+.ff-c10 {
+  font: 10px Courier, Monospace;
+}
+
+.myfontstyle {
+  font: bold  15px arial, sans-serif;
+}
+
+.ti-i {
+  text-indent: 20px;
+}
+
+.ti-ii {
+  text-indent: 40px;
+}
