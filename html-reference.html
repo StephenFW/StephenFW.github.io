@@ -1,8 +1,589 @@
 <!DOCTYPE html>
 <html>
-<body>
-  
-<a href="StephenFW.github.io/html-reference/index.html">HTML Reference Page Link</a>
+<head>
+<style>
+table, th, td {
+    border: 1px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
 
+</style>
+</head>
+<body>
+
+<!-- class names
+ta = text align
+tf = text format
+ff = font format
+ti = text indent
+
+-->
+
+<h1 class="ta-c tb-i tb-b"><u>HTML Reference Page</u></h1> 
+<table class="tft tb-ii tb-iii">
+  <tr>
+    <th class="ta-c" colspan="4"><u>HTML</u></th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Start Tag</th>
+    <th>End Tag</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td><a href="#html">HTML</a></td>
+    <td class="ff-c12">&lt;html&gt;</td>
+    <td class="ff-c12">&lt;/html&gt;</td>
+    <td class="ff-c12">&lt;html&gt;<i> text </i>&lt;/html&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#head">Head</a></td>
+    <td class="ff-c12">&lt;head&gt;</td>
+    <td class="ff-c12">&lt;/head&gt;</td>
+    <td class="ff-c12">&lt;head&gt;<i> text </i>&lt;/head&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#title">Title</a></td>
+    <td class="ff-c12">&lt;title&gt;</td>
+    <td class="ff-c12">&lt;/title&gt;</td>
+    <td class="ff-c12">&lt;title&gt;<i> text </i>&lt;/title&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#body">Body</a></td>
+    <td class="ff-c12">&lt;body&gt;</td>
+    <td class="ff-c12">&lt;/body&gt;</td>
+    <td class="ff-c12">&lt;body&gt;<i> text </i>&lt;/body&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#heading">Headings</a></td>
+    <td class="ff-c12">&lt;hi&gt;, &lt;h2&gt;, &lt;h3&gt; etc...</td>
+    <td class="ff-c12">&lt;/h1&gt;, &lt;/h2&gt;, &lt;/h3&gt; etc...</td>
+    <td class="ff-c12">&lt;h1&gt;<i> text </i>&lt;/h1&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#paragraph">Paragraph</a></td>
+    <td class="ff-c12">&lt;p&gt;</td>
+    <td class="ff-c12">&lt;/p&gt;</td>
+    <td class="ff-c12">&lt;p&gt;<i> text </i>&lt;/p&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#break">Breaks</a></td>
+    <td class="ff-c12">&lt;br&gt;</td>
+    <td class="ff-c12"></td>
+    <td class="ff-c12">&lt;br&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#line">Lines</a></td>
+    <td class="ff-c12">&lt;hr&gt;</td>
+    <td></td>
+    <td class="ff-c12">&lt;hr&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#comment">Comments</a></td>
+    <td class="ff-c12">&lt;!--</td>
+    <td class="ff-c12">--&gt;</td>
+    <td class="ff-c12">&lt;!--<i> text </i>--&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#link">Links</a></td>
+    <td class="ff-c12">&lt;a&gt;</td>
+    <td class="ff-c12">&lt;/a&gt;</td>
+    <td class="ff-c12">&lt;a href= "[link]"&gt;<i> text </i>&lt;/a&gt;;</td>
+  </tr>
+  <tr>
+    <td><a href="#image">Images</a></td>
+    <td class="ff-c12">&lt;img&gt;</td>
+    <td class="ff-c12"></td>
+    <td class="ff-c12">&lt;img src= "[url]" alt= "<i>text</i>"&gt;</td>
+  </tr>
+  <tr>
+    <td><a href="#list">Lists</a></td>
+    <td class="ff-c12">&lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;</td>
+    <td class="ff-c12">&lt;/ul&gt;, &lt;/ol&gt;, &lt;/dl&gt;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="#table">Tables</a></td>
+    <td class="ff-c12">&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</td>
+    <td class="ff-c12">&lt;/table&gt;, &lt;/tr&gt;, &lt;/td&gt;, &lt;/th&gt;</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="#block">Blocks</a></td>
+    <td class="ff-c12">&lt;div&gt;</td>
+    <td class="ff-c12">&lt;/div&gt;</td>
+    <td class="ff-c12">&lt;div&gt;<i> text </i>&lt;/div&gt;</td>
+  </tr>
+</table>
+
+<!-- Main Table ^ -->
+
+<hr>
+
+<h2 class="tb-b ta-c tb-iv" id="html">HTML</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The &lt;html&gt; element is used to define the part of a document that contains HTML. Basically a tag used to contain all HTML code.
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Syntax</h3><p class="ff-c12">
+      &lt;html&gt; <i>text</i> &lt;/html&gt;
+   </p></td>
+  </tr>
+  <tr>
+    <td><h3>Example</h3>
+    <p class="ff-c12">&lt;!DOCTYPE html></p>
+<p class="ff-c12">&lt;html></p>
+<p class="ti-i ff-c12">&lt;head></p>
+<p class="ti-i ff-c12">&lt;/head></p>
+<p class="ff-c12">&lt;body></p>
+<p class="ti-i ff-c12">&lt;p>This is a paragraph&lt;/p></p>
+<p class="ff-c12">&lt;/body></p>
+<p class="ff-c12">&lt;/html></p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <p>This is a paragraph</p>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- HTML Section ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="head">Head</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The &lt;head&gt; element is used to define the part of a document that belongs to the "head" of the document.
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Syntax</h3><p class="ff-c12">
+      &lt;head&gt; <i>text</i> &lt;/head&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Example</h3>
+    <p>&lt;!DOCTYPE html></p>
+<p class="ff-c12">&lt;html></p>
+<p class="ti-i ff-c12"><b>&lt;head></b></p>
+<p class="ti-i ff-c12"><b>&lt;/head></b></p>
+<p class="ff-c12">&lt;body></p>
+<p class="ti-i ff-c12">&lt;p>This is a paragraph&lt;/p></p>
+<p class="ff-c12">&lt;/body></p>
+<p class="ff-c12">&lt;/html></p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <p>This is a paragraph</p>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Head ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="title">Title</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The &lt;title&gt; element will display the text within it in the taskbar of your computer browser. Basically sets the tab name of a specific page in your website.
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Syntax</h3><p class="ff-c12">
+      &lt;title&gt; <i>text</i> &lt;/title&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Example</h3>
+    <p class="ff-c12">&lt;title&gt; This is a title &lt;/title&gt;</p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <i>*The title of the tab should be called "This is a title"</i>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Title ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="body">Body</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The &lt;body&gt; element is what defines the "body" of a document, the body contains the paragraphs, headings, tables, graphs etc.
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Syntax</h3>
+      <p class="ff-c12">&lt;body&gt; <i>text</i> &lt;/body&gt;</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+<p>&lt;!DOCTYPE html></p>
+<p>&lt;html></p>
+<p class="ti-i">&lt;head></p>
+<p class="ti-i">&lt;/head></p>
+<p><b>&lt;body></b></p>
+<p class="ti-i"><b>&lt;p>This is a paragraph&lt;/p></b></p>
+<p><b>&lt;/body></b></p>
+<p>&lt;/html></p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <p>This is a paragraph</p>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Body ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="heading">Headings</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The heading element is used to display the text within it as a heading, the higher the number that you set the heading tag to (h1, h2, h3 etc.) the smaller the heading becomes.  
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Syntax</h3><p class="ff-c12">
+      &lt;h1&gt; <i>text</i> &lt;/h1&gt;, &lt;h2&gt; <i>text</i> &lt;/h2&gt;, &lt;h3&gt; <i>text</i> &lt;/h3&gt; etc.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    &lt;h1&gt; This is a heading &lt;/h1&gt;
+    &lt;h2&gt; This is a heading &lt;/h2&gt;
+    &lt;h3&gt; This is a heading &lt;/h3&gt;
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <h1>This is a heading</h1>
+    <h2>This is a heading</h2>
+    <h3>This is a heading</h3>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Heading ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="paragraph">Paragraphs</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The paragraph element will define a block of text as a paragraph, the paragraph would not be indented and two different paragraphs next to eachother will be separated from eachother by a margin and by a break instead of merging.
+    </p></td>
+  </tr>
+  <tr>
+    <td><h3>Syntax</h3><p class="ff-c12">
+      &lt;p&gt; <i>text</i> &lt;/p&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    &lt;p&gt; This is a paragraph &lt;/p&gt;
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <p>This is a paragraph</p>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Paragraph ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="break">Breaks</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The break element acts as the "enter" key on your keyboard, when inserted in a block of text it would move the text down to the next line. Making two separate paragraphs out of one block of text will do something similar.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;br&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    This is some text... <br>&lt;br&gt;<br> ...and this is some more text...
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    This is some text...
+    <br>
+    ...and this is some more text...
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Breaks ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="line">Lines</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The line element will create a horizontal line wherever you insert it, usually you would want to put HTML code above and below the line tag and not on the same row.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;hr&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    This is some text... <br>&lt;hr&gt;<br> ...and this is some more text...
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    This is some text...
+    <hr>
+    ...and this is some more text...
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- lines ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="comment">Comments</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The comment element will mark a block of text so that it would not display as a result of running your code but can be seen when viewing the code itself, comments can be used to write private notes as well as organize your code.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;!-- <i>text</i> --&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    &lt;!-- This is a comment --&gt;
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <i>*The text will not display as a result of running the HTML</i>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Comments ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="link">Links</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The link element is used to display a link in your webpage, you can set the display text of the link and of course the link itself. Links are colored blue and underlined by default but can be formatted.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;a href= "[link]"&gt; <i>text</i> &lt;/a&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    &lt;a href= "https://goo.gl/o6zvxV"&gt; This is a link &lt;/a&gt;
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <a href= "https://goo.gl/o6zvxV">This is a link</a>
+    </td>
+  </tr>
+</table>
+<hr>
+<!-- Links ^ -->
+<h2 class="tb-b ta-c tb-iv" id="image">Images</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The image element is used to display an image as long as you have the image link, if the image fails to load you can add "alt" text to display when the image doesn't load, informing a possible viewer that the image is not working.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;img src= "[url]" alt= "<i>text</i>"&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+      &lt;img src= "https://goo.gl/o6zvxV" alt= "Alt text"&gt;
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <img src= "https://goo.gl/o6zvxV" alt= "Alt text">
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Images ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="list">Lists</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The list element is used to create a list. A list could be an ordered list, an unordered list, and a description list. You can also set sub-items and use either a numbered list format, dots, dashes, and even squares.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;ul, ol, or dl&gt;
+    </p>
+    <p class="ti-i">&lt;li or dl&gt; <i>text</i> &lt;/li or /dl&gt;</p>
+    <p>&lt;/ul, /ol, or /dl&gt;</p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    <p>&lt;ul&gt;</p>
+    <p class="ti-i">&lt;li&gt; This is some text &lt;/li&gt;</p>
+    <p class="ti-i">&lt;li&gt; This is some more text &lt;/li&gt;</p>
+    <p class="ti-i">&lt;li&gt; This is some more text &lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    <ul>
+      <li>This is some text</li>
+      <li>This is some more text</li>
+      <li>This is some more text</li>
+    </ul>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Lists ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="table">Tables</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The table element is used to create a table, you can set the amount of rows and columns that the table has and you can also have one box cover multible areas and set styles to specific rows and columns.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3>
+      <p>&lt;table&gt;</p>
+      <p class="ti-i">&lt;tr&gt;</p>
+      <p class="ti-ii">&lt;th&gt; <i>text</i>&lt;/th&gt; </p>
+      <p class="ti-i">&lt;/tr&gt;</p>
+      <p>&lt;/table&gt;</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+      <p>&lt;table&gt;</p>
+      <p class="ti-i">&lt;tr&gt;</p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-i">&lt;/tr&gt;</p>
+      <p class="ti-i">&lt;tr&gt;</p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-i">&lt;/tr&gt;</p>
+      <p class="ti-i">&lt;tr&gt;</p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-ii">&lt;th&gt; This is some text &lt;/th&gt; </p>
+      <p class="ti-i">&lt;/tr&gt;</p>
+      <p>&lt;/table&gt;</p>    
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+    
+    <i>*The lines on the table or white, but it's supposed to be a 3x3 table, sorry about that</i>
+    <br>
+    <br>
+    <table>
+      <tr>
+        <th> This is some text </th>
+        <th> This is some text </th>
+        <th> This is some text </th>
+      </tr>
+      <tr>
+        <th> This is some text </th>
+        <th> This is some text </th>
+        <th> This is some text </th>
+      </tr>
+      <tr>
+        <th> This is some text </th>
+        <th> This is some text </th>
+        <th> This is some text </th>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Tables ^ -->
+
+<h2 class="tb-b ta-c tb-iv" id="block">Blocks</h2>
+<table>
+  <tr>
+    <td><h3>Description</h3><p>
+      The block element or the "div" element is used to split the "body" of a document into multiple sections. Within these sections you can put seperate lines of code, a style applied to a section will not be applied to other sections.
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Syntax</h3><p>
+      &lt;div&gt; <i>text</i> &lt;/div&gt;
+    </p></td>
+  </tr>
+  <tr>
+    <td class="ff-c12"><h3>Example</h3>
+    &lt;div style="color:red"&gt; <br>&lt;p&gt;This is some text&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;p&gt;This is some more text&lt;/p&gt;
+    </td>
+  </tr>
+  <tr>
+    <td><h3>Display</h3>
+<div style="color:red">
+  <p>This is some text</p>
+</div>
+
+<p>This is some more text</p>
+    </td>
+  </tr>
+</table>
+<hr>
+
+<!-- Blocks ^ -->
+
+      <p><a href="https://stephenfw.github.io">[Back to Home Page]</a></p>
+    
 </body>
 </html>
