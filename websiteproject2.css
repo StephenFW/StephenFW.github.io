@@ -1,0 +1,38 @@
+.content {
+  background-color:#111111;
+}
+
+.content p {
+  color: white;
+}
+
+.content2 {
+  font-family:"Ariel", sans-serif;
+}
+
+.content h1 {
+  color: white;
+  text-align: center;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+}
+
+img {
+  width:100%;
+}
+
+.fss {
+  font-size: 12px;
+}
+
+.fss2 {
+  font-size: 20px;
+}
+
+.white {
+  color: white;
+}
+
