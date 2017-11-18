@@ -1,1 +1,89 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+  margin: 0px;
+}
+
+.cw {
+  color: white;
+}
+
+.title {
+  background-color: black;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #222222;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover:not(.active) {
+    background-color: #555555;
+    color: white;
+}
+
+/* indicate active page on nav */
+.active {
+    background-color: #333333;
+}
+
+/* A - Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 24px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+    line-height: 1;
+}
+
+/* Style the header */
+.header {
+    background-image: url("https://www.nature.com/polopoly_fs/7.43122.1490104952!/image/blackhole-lead.jpg_gen/derivatives/landscape_630/blackhole-lead.jpg");
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #222222;
+    padding: 10px;
+    text-align: center;
+}
