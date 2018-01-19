@@ -1,0 +1,28 @@
+   <!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+</style>
+    <link rel="icon" href="/images/favicon.png">
+</head>
+<body>
+  <div>
+     <img src='/images/ismall-1000.jpg'
+        srcset='/images/ihq-5700.jpg 5700w,
+                /images/ilq-3500.jpg 3500w,
+                /images/imq-2000.jpg 2000w,
+                /images/ismall-1000.jpg 1000w'>
+   </div>
+</body>
+</html>
+   
+ 
